@@ -95,7 +95,7 @@
             const index = urlParams.get('index');
 
             if (index !== null) {
-                fetch('../data/ScorecardHistory.json')
+                fetch('data/ScorecardHistory.json')
                     .then(response => response.json())
                     .then(data => {
                         const item = data.historys[index];
