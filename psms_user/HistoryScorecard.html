@@ -126,7 +126,7 @@
         // Function to load history data and populate the table
         async function loadHistory() {
             try {
-                const response = await fetch('../data/ScorecardHistory.json');
+                const response = await fetch('data/ScorecardHistory.json');
                 if (!response.ok) throw new Error('Network response was not ok');
                 const data = await response.json();
                 const tableBody = document.querySelector('#historyTable tbody');
@@ -219,7 +219,7 @@
         // Function to load recent promotions data
         async function loadData() {
             try {
-                const response = await fetch('../data/RecentPromotion.json');
+                const response = await fetch('data/RecentPromotion.json');
                 if (!response.ok) throw new Error('Network response was not ok');
                 const data = await response.json();
 
